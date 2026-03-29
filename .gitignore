@@ -41,3 +41,4 @@ env/
 
 # ── Pytest ──────────────────────────────────────────
 .pytest_cache/
+.streamlit/secrets.toml
