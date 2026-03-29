@@ -14,7 +14,7 @@
 
 *Ask questions in English or Urdu — get grounded, cited answers from official legal documents.*
 
-[🚀 Features](#features) • [⚡ Quick Start](#quick-start) • [🏗️ Architecture](#architecture) • [📚 Data Sources](#data-sources) • [👨‍💻 Developer](#developer)
+
 
 [🌐 Live Demo](https://pakistan-law-assistant-bnn4zdjsdzr8bvhezhxappj.streamlit.app) • [🚀 Features](#features) • [⚡ Quick Start](#quick-start) • [🏗️ Architecture](#architecture) • [📚 Data Sources](#data-sources) • [👨‍💻 Developer](#developer)
 </div>
