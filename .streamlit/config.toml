@@ -1,0 +1,6 @@
+[server]
+maxUploadSize = 50
+enableCORS = false
+
+[theme]
+base = "dark"
