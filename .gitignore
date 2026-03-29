@@ -15,8 +15,6 @@ build/
 
 # ── Large index files ───────────────────────────────
 *.pkl
-*.faiss
-data/processed/
 
 # ── Large model files ───────────────────────────────
 *.gguf
