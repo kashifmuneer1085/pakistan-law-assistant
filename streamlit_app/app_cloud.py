@@ -462,7 +462,7 @@ with tab_chat:
                 # Bubble
                 st.markdown(f"""
                 <div class="msg-bot-wrap">
-                    <div class="bot-avatar">PL</div>
+                    <div class="bot-avatar">⚖️</div>
                     <div class="msg-bot-content">
                         <div class="bot-name-tag">Pakistan Law Assistant</div>
                         <div class="msg-bot{urdu_cls}">{answer_html}</div>
