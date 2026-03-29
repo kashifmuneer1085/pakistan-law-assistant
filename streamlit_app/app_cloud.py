@@ -378,7 +378,7 @@ with st.sidebar:
     st.markdown("""
     <div style="position:fixed;bottom:1rem;left:0;width:260px;text-align:center;padding:0 1rem">
         <div style="font-size:0.7rem;color:rgba(136,146,164,0.5);line-height:1.6">
-            Pakistan Law Assistant v1.0<br>Engineer Kashif Muneer · AI4LYF
+            Pakistan Law Assistant v1.0<br>Engineer Kashif Muneer
         </div>
     </div>
     """, unsafe_allow_html=True)
