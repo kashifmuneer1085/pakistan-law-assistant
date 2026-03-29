@@ -8,6 +8,7 @@
 ![Groq](https://img.shields.io/badge/Groq-Llama%203.3%2070B-F55036?style=for-the-badge&logo=groq&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.41-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-gold?style=for-the-badge)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)](https://pakistan-law-assistant-bnn4zdjsdzr8bvhezhxappj.streamlit.app)
 
 **An AI-powered legal assistant that makes Pakistani law accessible to every citizen.**
 
@@ -15,6 +16,7 @@
 
 [🚀 Features](#features) • [⚡ Quick Start](#quick-start) • [🏗️ Architecture](#architecture) • [📚 Data Sources](#data-sources) • [👨‍💻 Developer](#developer)
 
+[🌐 Live Demo](https://pakistan-law-assistant-bnn4zdjsdzr8bvhezhxappj.streamlit.app) • [🚀 Features](#features) • [⚡ Quick Start](#quick-start) • [🏗️ Architecture](#architecture) • [📚 Data Sources](#data-sources) • [👨‍💻 Developer](#developer)
 </div>
 
 ---
