@@ -165,7 +165,7 @@ class PakistanLawPipeline:
         from src.ingestion.pdf_extractor import PDFExtractor
 
         extractor = PDFExtractor()
-        chunker = LegalChunker(self.cfg)
+        chunker = LegalChunker()
 
         raw_docs = extractor.extract(pdf_path, source_name, law_type, language)
         langchain_docs = [d.to_langchain_doc() for d in raw_docs]
