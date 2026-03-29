@@ -132,7 +132,7 @@ st.markdown("""
 .stExpander summary { color:var(--silver) !important; }
 hr { border-color:var(--border) !important; }
 .app-header { background:linear-gradient(135deg,rgba(0,200,140,0.08) 0%,rgba(0,165,115,0.04) 100%); border:1px solid var(--border); border-radius:var(--r); padding:2rem 2.5rem; margin-bottom:1.5rem; position:relative; overflow:hidden; }
-.app-header::before { content:'\2696'; position:absolute; right:2rem; top:50%; transform:translateY(-50%); font-size:7rem; color:var(--emerald); opacity:0.07; pointer-events:none; font-family:'Arial Unicode MS',sans-serif; }
+.app-header::before { content:'\⚖️'; position:absolute; right:2rem; top:50%; transform:translateY(-50%); font-size:7rem; color:var(--emerald); opacity:0.07; pointer-events:none; font-family:'Arial Unicode MS',sans-serif; }
 .app-header h1 { font-family:'Playfair Display',serif !important; font-size:2rem !important; color:var(--white) !important; margin:0 0 0.4rem !important; font-weight:700 !important; }
 .app-header h1 span { color:var(--emerald); }
 .app-header p { color:var(--silver) !important; font-size:0.9rem !important; margin:0 !important; }
