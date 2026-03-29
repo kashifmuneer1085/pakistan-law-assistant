@@ -1,0 +1,69 @@
+# configs/config.yaml
+# ── Pakistan Law Assistant Configuration ──────────────────────────────────
+
+# LLM Settings
+llm:
+  provider: "groq"
+  model: "llama-3.3-70b-versatile"
+  temperature: 0.0
+  max_tokens: 1024
+  # For local Mistral/Llama (optional):
+  # local_model_path: "./models/mistral-7b-instruct-v0.2.Q4_K_M.gguf"
+
+# Embeddings
+embeddings:
+  model: "intfloat/multilingual-e5-large"   # supports English + Urdu
+  device: "cpu"               # cpu | cuda | mps
+  batch_size: 32
+
+# Vector Database
+vector_db:
+  type: "faiss"               # faiss | chroma
+  index_path: "./data/processed/embeddings/faiss_index"
+  chroma_path: "./data/processed/embeddings/chroma_db"
+
+# Chunking Strategy
+chunking:
+  strategy: "recursive_legal" # recursive_legal | sentence | fixed
+  chunk_size: 512             # tokens
+  chunk_overlap: 64           # ~10% overlap
+  separators:                 # legal document section delimiters
+    - "\n## "
+    - "\nSection "
+    - "\nArticle "
+    - "\nClause "
+    - "\n\n"
+    - "\n"
+    - " "
+
+# Retrieval
+retrieval:
+  top_k: 8                    # initial candidates
+  rerank_top_k: 3             # after cross-encoder reranking
+  hybrid_alpha: 0.7           # 0=pure BM25, 1=pure vector, 0.7=mostly semantic
+  bm25_index_path: "./data/processed/embeddings/bm25_index.pkl"
+  score_threshold: 0.30       # min similarity; below = "not found"
+
+# Data Sources
+data_sources:
+  pdf_dir: "./data/raw/pdfs"
+  scraped_dir: "./data/raw/scraped"
+  chunks_dir: "./data/processed/chunks"
+
+# API
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: false
+
+# Streamlit
+streamlit:
+  page_title: "Pakistan Law Assistant"
+  default_language: "en"      # en | ur
+
+# Anti-hallucination
+safety:
+  require_sources: true       # refuse to answer if no sources found
+  min_sources: 1
+  disclaimer: "This is general legal information, not legal advice. Consult a qualified lawyer for your specific situation."
+  out_of_scope_response: "I could not find relevant information in Pakistani legal documents to answer this question reliably."
